@@ -2,4 +2,6 @@
 
 Hi
 GeoApiFW contains the project of API service
-GeoProj contaons the angular project
+GeoProj contains the angular project
+
+Good luck!
