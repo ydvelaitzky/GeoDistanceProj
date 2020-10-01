@@ -1,0 +1,10 @@
+c:\Users\ydvelaitzky\GeoProj\bin\Debug\netcoreapp2.0\GeoProj.deps.json
+c:\Users\ydvelaitzky\GeoProj\bin\Debug\netcoreapp2.0\GeoProj.runtimeconfig.json
+c:\Users\ydvelaitzky\GeoProj\bin\Debug\netcoreapp2.0\GeoProj.runtimeconfig.dev.json
+C:\Users\ydvelaitzky\GeoProj\bin\Debug\netcoreapp2.0\GeoProj.dll
+C:\Users\ydvelaitzky\GeoProj\bin\Debug\netcoreapp2.0\GeoProj.pdb
+C:\Users\ydvelaitzky\GeoProj\obj\Debug\netcoreapp2.0\GeoProj.csproj.CoreCompileInputs.cache
+C:\Users\ydvelaitzky\GeoProj\obj\Debug\netcoreapp2.0\GeoProj.AssemblyInfoInputs.cache
+C:\Users\ydvelaitzky\GeoProj\obj\Debug\netcoreapp2.0\GeoProj.AssemblyInfo.cs
+C:\Users\ydvelaitzky\GeoProj\obj\Debug\netcoreapp2.0\GeoProj.dll
+C:\Users\ydvelaitzky\GeoProj\obj\Debug\netcoreapp2.0\GeoProj.pdb

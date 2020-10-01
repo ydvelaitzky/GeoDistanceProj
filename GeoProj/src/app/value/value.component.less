@@ -1,0 +1,45 @@
+@geoColor:sandybrown;
+.container{
+    width:350px;
+    margin-top:20px;
+
+
+    .disabledBtn{
+        pointer-events: none;
+        cursor: default;
+        background-color:#7caee3;
+    }
+}
+
+.resultArea{
+    background: black;
+
+    label{
+        color:white;
+        font-size:28px;
+        display: block;
+    }
+    number{
+        color:@geoColor;
+        font-size: 50px;
+        padding:10px;
+    }
+    span{
+        color:white;
+        font-size: 16px;
+    }
+
+    .geoCol{
+        color: @geoColor;
+    }
+
+    .list{
+        span{
+            padding:5px;
+        }
+    }
+}
+.overflow{
+    overflow: scroll;
+    max-height:600px
+}

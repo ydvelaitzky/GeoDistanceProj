@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WorkDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="WorkDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="GeoDistance" EntityType="WorkDBModel.GeoDistance" />
+  </EntityContainer>
+  <EntityType Name="GeoDistance">
+    <Key>
+      <PropertyRef Name="Source" />
+      <PropertyRef Name="Destination" />
+    </Key>
+    <Property Name="Source" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Destination" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="KMS" Type="Decimal" Nullable="false" Precision="5" Scale="2" />
+    <Property Name="Hits" Type="Int32" Nullable="false" />
+  </EntityType>
+</Schema>

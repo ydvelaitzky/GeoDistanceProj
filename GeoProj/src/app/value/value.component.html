@@ -1,0 +1,56 @@
+<div>
+  {{popularResults.length}}
+</div>
+
+
+<div class="container">
+  <div class="form-group">
+    <label for="srcTxt">מוצא</label>
+    <input [(ngModel)]="src" type="text" class="form-control" id="srcTxt">
+  </div>
+  <div class="form-group">
+    <label for="destTxt">יעד</label>
+    <input [(ngModel)]="dest" type="text" class="form-control" id="destTxt" (keydown.enter)="getDistance()">
+  </div>
+  <button type="button" class="btn btn-primary" [class.disabledBtn]="!enableClick() ? 'disabled': null" (click)="getDistance()">הצג את המרחק</button>
+</div>
+
+<div  class="container">
+<label class="label label-default" [hidden]="!isWaiting">
+  נא להמתין....
+</label>
+<label class="label label-danger" [hidden]="!hasError()">
+   קרתה שגיאה
+  </label>
+</div>
+
+<div class="resultArea container" [hidden]="result==null">
+  <div>
+    <div>
+      <label>המרחק</label>
+      <number>{{result}}</number>
+      <span>ק"מ</span>
+    </div>
+    <div>
+    </div>
+
+  </div>
+</div>
+
+<div class="resultArea container overflow" [hidden]="popularResults.length==0">
+  <label>המרחק הפופולארי ביותר</label>
+
+  <div *ngFor="let res of popularResults" class="list">
+
+    <number>{{res.Hits}}</number>
+    <span>בקשות</span>
+    <div>
+      <span class="geoCol">{{res.Source}}</span>
+      <span>|</span>
+      <span class="geoCol">{{res.Destination}}</span>
+    </div>
+
+  </div>
+
+</div>
+

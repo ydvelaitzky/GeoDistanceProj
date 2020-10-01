@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WorkDBModelStoreContainer" CdmEntityContainer="WorkDBEntities">
+    <EntitySetMapping Name="GeoDistance">
+      <EntityTypeMapping TypeName="WorkDBModel.GeoDistance">
+        <MappingFragment StoreEntitySet="GeoDistance">
+          <ScalarProperty Name="Hits" ColumnName="Hits" />
+          <ScalarProperty Name="KMS" ColumnName="KMS" />
+          <ScalarProperty Name="Destination" ColumnName="Destination" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

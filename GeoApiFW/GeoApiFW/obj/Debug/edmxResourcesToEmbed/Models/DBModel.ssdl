@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WorkDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="GeoDistance">
+    <Key>
+      <PropertyRef Name="Source" />
+      <PropertyRef Name="Destination" />
+    </Key>
+    <Property Name="Source" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Destination" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="KMS" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="Hits" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="WorkDBModelStoreContainer">
+    <EntitySet Name="GeoDistance" EntityType="Self.GeoDistance" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
